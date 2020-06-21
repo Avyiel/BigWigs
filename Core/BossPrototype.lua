@@ -2089,6 +2089,10 @@ do
 	-- @param[opt] text the bar text (if nil, key is used)
 	-- @param[opt] icon the bar icon (spell id or texture name)
 	function boss:AIBar(key, phase, text, icon)
+		-- The code inside this function was taken from DeadlyBossMods and modified for use with this addon:
+		-- https://github.com/DeadlyBossMods/DeadlyBossMods/blob/09f20ec384a6420046f9dd9d7d6f893cdba90bcb/DBM-Core/DBM-Core.lua#L10440-L10490
+		-- It is licensed under CC 3.0: https://creativecommons.org/licenses/by-sa/3.0/
+
 		if not self["aiBar"..key] then self["aiBar"..key] = {} end
 		if not phase then phase = 4 end
 
