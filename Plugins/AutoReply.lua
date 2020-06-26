@@ -31,7 +31,10 @@ local hogger = "XXX_HOGGER"
 local healthPools, healthPoolNames = {}, {}
 local timer = nil
 
-local GetDifficultyInfo = function(...) return ... end
+local GetDifficultyInfo = function()
+	local _, _, _, difficultyName = GetInstanceInfo()
+	return difficultyName
+end
 -------------------------------------------------------------------------------
 -- Options
 --
@@ -45,8 +48,8 @@ do
 		values = {
 			L.autoReplyBasic,
 			L.autoReplyNormal:format(hogger),
-			L.autoReplyAdvanced:format(hogger, GetDifficultyInfo(2), 12, 20),
-			L.autoReplyExtreme:format(hogger, GetDifficultyInfo(2), 12, 20, L.healthFormat:format(hogger, 42)),
+			L.autoReplyAdvanced:format(hogger, GetDifficultyInfo(), 12, 20),
+			L.autoReplyExtreme:format(hogger, GetDifficultyInfo(), 12, 20, L.healthFormat:format(hogger, 42)),
 		},
 		width = "full",
 		style = "radio",
@@ -260,7 +263,7 @@ do
 				end
 			end
 			-- In combat with encounterName, difficulty, playersAlive
-			return L.autoReplyAdvanced:format(curModule.displayName, GetDifficultyInfo(curDiff), playersAlive, playersTotal)
+			return L.autoReplyAdvanced:format(curModule.displayName, GetDifficultyInfo(), playersAlive, playersTotal)
 		elseif mode == 4 then
 			local _, _, _, instanceId = UnitPosition("player")
 			local playersTotal, playersAlive = 0, 0
@@ -288,7 +291,7 @@ do
 				end
 			end
 			-- In combat with encounterName, difficulty, playersAlive, bossHealth
-			return L.autoReplyExtreme:format(curModule.displayName, GetDifficultyInfo(curDiff), playersAlive, playersTotal, totalHp)
+			return L.autoReplyExtreme:format(curModule.displayName, GetDifficultyInfo(), playersAlive, playersTotal, totalHp)
 		else
 			return L.autoReplyBasic -- In combat
 		end
