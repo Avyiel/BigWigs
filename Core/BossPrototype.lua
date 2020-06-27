@@ -2,12 +2,11 @@
 -- Boss Prototype
 -- The API of a module created from `BigWigs:NewBoss`.
 --
---### BigWigs:NewBoss (moduleName, instanceId[, journalId])
+--### BigWigs:NewBoss (moduleName, instanceId)
 --
 --**Parameters:**
 --  - `moduleName`:  [string] a unique module name, usually the boss name
 --  - `instanceId`:  [number] the instance id for the zone the boss is located in. Negative ids are used to represent map ids using the map API (usually for world bosses)
---  - `journalId`:  [number] the journal id for the boss, used to translate the boss name (_optional_)
 --
 --**Returns:**
 --  - boss module
@@ -986,7 +985,7 @@ end
 function boss:EncounterEnd(event, id, name, diff, size, status)
 	if self.engageId == id and self.enabled then
 		if status == 1 then
-			if self.journalId or self.allowWin then
+			if self.allowWin then
 				self:Win() -- Official boss module
 			else
 				self:Disable() -- Custom external boss module

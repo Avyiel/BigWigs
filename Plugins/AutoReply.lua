@@ -127,7 +127,7 @@ end
 --
 
 function plugin:BigWigs_OnBossEngage(event, module, difficulty)
-	if not self.db.profile.disabled and module and module.journalId and not module.worldBoss then
+	if not self.db.profile.disabled and module and module.engageId and not module.worldBoss then
 		curDiff = difficulty
 		curModule = module
 		throttle, throttleBN, friendlies = {}, {}, {}
@@ -169,7 +169,7 @@ do
 	end
 
 	function plugin:BigWigs_OnBossWin(event, module)
-		if not self.db.profile.disabled and module and module.journalId and not module.worldBoss then
+		if not self.db.profile.disabled and module and module.engageId and not module.worldBoss then
 			curDiff = 0
 			self:UnregisterEvent("CHAT_MSG_WHISPER")
 			self:UnregisterEvent("CHAT_MSG_BN_WHISPER")

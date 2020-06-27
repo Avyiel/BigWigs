@@ -433,10 +433,9 @@ end
 --
 
 do
-	local EJ_GetEncounterInfo = function(...) return ... end
 	local errorAlreadyRegistered = "%q already exists as a module in BigWigs, but something is trying to register it again."
 	local bossMeta = { __index = bossPrototype, __metatable = false }
-	function core:NewBoss(moduleName, zoneId, journalId, instanceId)
+	function core:NewBoss(moduleName, zoneId)
 		if bosses[moduleName] then
 			core:Print(errorAlreadyRegistered:format(moduleName))
 		else
@@ -456,12 +455,7 @@ do
 			bosses[moduleName] = m
 			initModules[#initModules+1] = m
 
-			if journalId then
-				m.journalId = journalId
-				m.displayName = EJ_GetEncounterInfo(journalId)
-			else
 				m.displayName = moduleName
-			end
 
 			if zoneId > 0 then
 				m.instanceId = zoneId
