@@ -1066,9 +1066,9 @@ do
 				missing:SetFontObject(GameFontHighlight)
 				missing:SetFullWidth(true)
 				widget:AddChild(missing)
-		elseif value:match("^LittleWigs_") and GetAddOnEnableState(playerName, "LittleWigs") == 0 then
+		elseif value:match("^TinyWigs") and GetAddOnEnableState(playerName, "TinyWigs") == 0 then
 				local missing = AceGUI:Create("Label")
-				missing:SetText(L.missingAddOn:format("LittleWigs"))
+				missing:SetText(L.missingAddOn:format("TinyWigs"))
 				missing:SetFontObject(GameFontHighlight)
 				missing:SetFullWidth(true)
 				widget:AddChild(missing)
@@ -1109,11 +1109,11 @@ do
 					}
 					addonNameToHeader[value] = i
 				end
-			elseif value == "littlewigs" then
-				defaultHeader = "LittleWigs_Classic"
-				local enabled = GetAddOnEnableState(playerName, "LittleWigs") > 0
+			elseif value == "TinyWigs" then
+				defaultHeader = "TinyWigs_Classic"
+				local enabled = GetAddOnEnableState(playerName, "TinyWigs") > 0
 				for i = 1, 1 do
-					local value = "LittleWigs_" .. expansionHeader[i]
+					local value = "TinyWigs_" .. expansionHeader[i]
 					treeTbl[i] = {
 						text = defaultHeader,
 						value = value,
@@ -1243,7 +1243,7 @@ do
 		tabs:SetTabs({
 			{ text = L.options, value = "options" },
 			{ text = L.raidBosses, value = "bigwigs" },
-			{ text = L.dungeonBosses, value = "littlewigs" },
+			{ text = L.dungeonBosses, value = "TinyWigs" },
 		})
 		tabs:SetCallback("OnGroupSelected", onTabGroupSelected)
 		tabs:SelectTab("options")

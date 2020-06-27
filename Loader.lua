@@ -97,7 +97,7 @@ local fakeZones = { -- Fake zones used as GUI menus
 
 do
 	local c = "BigWigs_Classic"
-	local lw_c = "LittleWigs_Classic"
+	local lw_c = "TinyWigs_Classic"
 
 	public.zoneTbl = {
 		--[[ BigWigs: Classic ]]--
@@ -116,7 +116,7 @@ do
 		[-1440] = c, -- Ashenvale
 		[-1444] = c, -- Feralas
 
-		--[[ LittleWigs: Classic ]]--
+		--[[ TinyWigs: Classic ]]--
 		[33] = lw_c, -- Shadowfang Keep
 		[34] = lw_c, --	The Stockade
 		[36] = lw_c, -- Deadmines
@@ -1039,7 +1039,7 @@ do
 		if (BigWigs and BigWigs.db.profile.showZoneMessages == false) or self.isShowingZoneMessages == false then return end
 		local zoneAddon = public.zoneTbl[id]
 		if zoneAddon and zoneAddon ~= "BigWigs_Classic" then
-			if zoneAddon:find("LittleWigs_", nil, true) then zoneAddon = "LittleWigs" end -- Collapse into one addon
+			if zoneAddon:find("TinyWigs", nil, true) then zoneAddon = "TinyWigs" end -- Collapse into one addon
 			if id > 0 and not fakeZones[id] and not warnedThisZone[id] and not IsAddOnEnabled(zoneAddon) then
 				warnedThisZone[id] = true
 				local msg = L.missingAddOn:format(zoneAddon)
