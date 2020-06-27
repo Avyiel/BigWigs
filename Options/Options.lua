@@ -384,7 +384,7 @@ end
 
 local icons = {
 	MESSAGE = 134332, -- Interface\\Icons\\INV_MISC_NOTE_06
-	ME_ONLY = 463836, -- Interface\\Icons\\Priest_spell_leapoffaith_b
+	ME_ONLY = 132212, -- Interface\\Icons\\Ability_Hunter_Snipershot
 	SOUND = 130977, -- "Interface\\Common\\VoiceChat-On"
 	ICON = 137008, -- Interface\\TARGETINGFRAME\\UI-RaidTargetingIcon_8
 	FLASH = 135849, -- Interface\\Icons\\Spell_Frost_FrostShock
@@ -392,7 +392,7 @@ local icons = {
 	PROXIMITY = 132181, -- Interface\\Icons\\ability_hunter_pathfinding
 	ALTPOWER = 429383, -- Interface\\Icons\\spell_arcane_invocation
 	INFOBOX = 443374, -- Interface\\Icons\\INV_MISC_CAT_TRINKET05
-	COUNTDOWN = 1035057, -- Interface\\Icons\\Achievement_GarrisonQuests_0005
+	COUNTDOWN = 136106, -- Interface\\Icons\\Spell_Nature_Timestop
 	SAY = 2056011, -- Interface\\Icons\\UI_Chat
 	SAY_COUNTDOWN = 2056011, -- Interface\\Icons\\UI_Chat
 	VOICE = 589118, -- Interface\\Icons\\Warrior_DisruptingShout
