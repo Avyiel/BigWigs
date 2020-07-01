@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 - Nothing at the moment
 
+## [v2-alpha.2] - 2020-07-01
+Nothing changed, just trying to get the packager to work.
+
 ## [v2-alpha.1] - 2020-07-01
 Nothing changed, just trying to get the packager to work.
 
@@ -17,6 +20,5 @@ Nothing changed, just trying to get the packager to work.
 - A custom AI Bar that learns the skill timer as it is used by the boss
 - Statistics for Dungeon bosses
 
-[Unreleased]: https://github.com/Avyiel/TinyWigs/compare/v2...HEAD
-[v2]: https://github.com/Avyiel/TinyWigs/releases/tag/v2
+[Unreleased]: https://github.com/Avyiel/TinyWigs/compare/v1...HEAD
 [v1]: https://github.com/Avyiel/TinyWigs/releases/tag/v1
