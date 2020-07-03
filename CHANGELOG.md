@@ -7,6 +7,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 - Nothing at the moment
 
+## [v3] - 2020-07-03
+### Added
+- AQ20 raid bosses
+- AQ40 raid bosses
+### Removed
+- Difficulty and health info from the AutoReply plugin
+
 ## [v2] - 2020-07-01
 Aha! It works! First release with a real binary on GitHub.
 
@@ -25,6 +32,7 @@ Nothing changed, just trying to get the packager to work.
 - A custom AI Bar that learns the skill timer as it is used by the boss
 - Statistics for Dungeon bosses
 
-[Unreleased]: https://github.com/Avyiel/TinyWigs/compare/v2...HEAD
+[Unreleased]: https://github.com/Avyiel/TinyWigs/compare/v3...HEAD
+[v3]: https://github.com/Avyiel/TinyWigs/releases/tag/v3
 [v2]: https://github.com/Avyiel/TinyWigs/releases/tag/v2
 [v1]: https://github.com/Avyiel/TinyWigs/releases/tag/v1
