@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 - Nothing at the moment
 
+## [v4] - 2020-07-05
+### Fixed
+- Ossirian's name
+- Ouro's locale strings
+- General locale fixes and improvements
+
 ## [v3] - 2020-07-03
 ### Added
 - AQ20 raid bosses
@@ -32,7 +38,8 @@ Nothing changed, just trying to get the packager to work.
 - A custom AI Bar that learns the skill timer as it is used by the boss
 - Statistics for Dungeon bosses
 
-[Unreleased]: https://github.com/Avyiel/TinyWigs/compare/v3...HEAD
+[Unreleased]: https://github.com/Avyiel/TinyWigs/compare/v4...HEAD
+[v4]: https://github.com/Avyiel/TinyWigs/releases/tag/v4
 [v3]: https://github.com/Avyiel/TinyWigs/releases/tag/v3
 [v2]: https://github.com/Avyiel/TinyWigs/releases/tag/v2
 [v1]: https://github.com/Avyiel/TinyWigs/releases/tag/v1
