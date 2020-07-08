@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 - Nothing at the moment
 
+## [v5] - 2020-07-08
+### Changes
+- Update TOC to 1.13.5
+
 ## [v4] - 2020-07-05
 ### Fixed
 - Ossirian's name
