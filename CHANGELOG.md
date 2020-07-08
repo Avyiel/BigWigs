@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 - Nothing at the moment
 
-## [v5] - 2020-07-08
+## [v5.0] - 2020-07-08
 ### Changes
 - Update TOC to 1.13.5
 
@@ -42,7 +42,8 @@ Nothing changed, just trying to get the packager to work.
 - A custom AI Bar that learns the skill timer as it is used by the boss
 - Statistics for Dungeon bosses
 
-[Unreleased]: https://github.com/Avyiel/TinyWigs/compare/v4...HEAD
+[Unreleased]: https://github.com/Avyiel/TinyWigs/compare/v5.0...HEAD
+[v5.0]: https://github.com/Avyiel/TinyWigs/releases/tag/v5.0
 [v4]: https://github.com/Avyiel/TinyWigs/releases/tag/v4
 [v3]: https://github.com/Avyiel/TinyWigs/releases/tag/v3
 [v2]: https://github.com/Avyiel/TinyWigs/releases/tag/v2
